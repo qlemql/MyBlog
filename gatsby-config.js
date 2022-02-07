@@ -13,5 +13,12 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
   ],
 };
