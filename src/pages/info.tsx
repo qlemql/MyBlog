@@ -1,5 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
+import styled from 'styled-components';
+
+const Text = styled.div`
+  font-size: 20px;
+  color: gray
+`
+
 
 interface InfoPageProps {
   data: {
@@ -22,7 +29,9 @@ const InfoPage: React.FC<InfoPageProps> = function ({
 }) {
   return (
     <div>
-      {title} {description} {author}
+    <Text>{title}</Text>
+      {description}
+      {author}
     </div>
   );
 };
