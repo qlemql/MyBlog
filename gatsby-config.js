@@ -40,6 +40,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
-    `gatsby-plugin-emotion`,
+    "gatsby-plugin-styled-components",
   ],
 };
